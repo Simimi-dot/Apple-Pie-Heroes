@@ -154,10 +154,21 @@ class ViewController: UIViewController {
         updateUI()
     }
     
+    func updateCorrectWord() {
+        var displayWord = [String]() // Создаем пустой массив строк
+        for letter in currentGame.guessedWord{ // Проходим буквенно по guessedWord
+            displayWord.append(String(letter)) // Добавляем буквы в этот массив строк
+        }
+        correctWordLabel.text = displayWord.joined(separator: " ") // Текст, который мы создаем, получаем из массива displayWord соединяя вместе всего его элементы через " "
+        
+    }
+    
     func updateUI() {
         let movesRemaining = currentGame.incorrectMovesRemaining
-        let imgae = "Tree\(movesRemaining < 8 ? movesRemaining : 7)" // Связываем название картинок дерева с количеством оставшихся попыток.
+        let imageNumber = (movesRemaining + 64) % 8 // Прибавить 64 и взять остаток от деления на 8
+        let imgae = "Tree\(imageNumber)" // Связываем название картинок дерева с количеством оставшихся попыток.
         treeImageView.image = UIImage(named: imgae)
+        updateCorrectWord()
         scorelabel.text = "Выигрыши: \(totalWins), Проигрыши: \(totalLoses)"
     }
     
@@ -174,6 +185,9 @@ class ViewController: UIViewController {
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
         sender.alpha = 0.3
+        let letter = sender.title(for: .normal)! // Извлекаем букву при угадывании слова
+        currentGame.playerGuessed(letter: Character(letter))
+        updateUI()
     }
     
     
