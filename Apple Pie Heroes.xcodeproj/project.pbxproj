@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06C6C4CC254C47C500BED542 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6C4CB254C47C500BED542 /* Game.swift */; };
 		06CABA4F254C25380082F528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CABA4E254C25380082F528 /* AppDelegate.swift */; };
 		06CABA51254C25380082F528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CABA50254C25380082F528 /* SceneDelegate.swift */; };
 		06CABA53254C25380082F528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CABA52254C25380082F528 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C6C4CB254C47C500BED542 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		06CABA4B254C25380082F528 /* Apple Pie Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CABA4E254C25380082F528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CABA50254C25380082F528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				06CABA4E254C25380082F528 /* AppDelegate.swift */,
+				06CABA57254C25390082F528 /* Assets.xcassets */,
+				06C6C4CB254C47C500BED542 /* Game.swift */,
+				06CABA5C254C25390082F528 /* Info.plist */,
+				06CABA59254C25390082F528 /* LaunchScreen.storyboard */,
+				06CABA54254C25380082F528 /* Main.storyboard */,
 				06CABA50254C25380082F528 /* SceneDelegate.swift */,
 				06CABA52254C25380082F528 /* ViewController.swift */,
-				06CABA54254C25380082F528 /* Main.storyboard */,
-				06CABA57254C25390082F528 /* Assets.xcassets */,
-				06CABA59254C25390082F528 /* LaunchScreen.storyboard */,
-				06CABA5C254C25390082F528 /* Info.plist */,
 			);
 			path = "Apple Pie Heroes";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				06CABA53254C25380082F528 /* ViewController.swift in Sources */,
 				06CABA4F254C25380082F528 /* AppDelegate.swift in Sources */,
 				06CABA51254C25380082F528 /* SceneDelegate.swift in Sources */,
+				06C6C4CC254C47C500BED542 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
