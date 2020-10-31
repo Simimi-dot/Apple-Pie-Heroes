@@ -140,18 +140,38 @@ class ViewController: UIViewController {
         "Mars",
         "Snapfire",
         "Void Spirit",
-    ]
+    ].shuffled()
     
-    var totalWins = 0
-    var totalLoses = 0
+    var totalWins = 0{
+        didSet{
+            newRound()
+        }
+    }
+    var totalLoses = 0{
+        didSet{
+            newRound()
+        }
+    }
     
     
     // MARK: - Methods
+    func enableButtons(_ enable: Bool = true){
+        for button in letterButtons{
+            button.isEnabled = enable
+            button.alpha = 1
+        }
+    }
     
     func newRound() {
+        guard !listOfHeroes.isEmpty else {
+            enableButtons(false)
+            updateUI()
+            return
+        }
         let newWord = listOfHeroes.removeFirst() // Удаляем из массива первое слово и оно же возвращается в константу newWord. Это слово и будет загаданным.
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
         updateUI()
+        enableButtons()
     }
     
     func updateCorrectWord() {
@@ -161,6 +181,16 @@ class ViewController: UIViewController {
         }
         correctWordLabel.text = displayWord.joined(separator: " ") // Текст, который мы создаем, получаем из массива displayWord соединяя вместе всего его элементы через " "
         
+    }
+    
+    func updateState() {
+        if currentGame.incorrectMovesRemaining < 1{
+            totalLoses += 1
+        } else if currentGame.guessedWord == currentGame.word{
+            totalWins += 1
+        }else {
+            updateUI()
+        }
     }
     
     func updateUI() {
@@ -187,7 +217,7 @@ class ViewController: UIViewController {
         sender.alpha = 0.3
         let letter = sender.title(for: .normal)! // Извлекаем букву при угадывании слова
         currentGame.playerGuessed(letter: Character(letter))
-        updateUI()
+        updateState()
     }
     
     

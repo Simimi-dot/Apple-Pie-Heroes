@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06920C9D254D6B9C005D2B13 /* Screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06920C9A254D6B9C005D2B13 /* Screenshot1.png */; };
+		06920C9E254D6B9C005D2B13 /* Screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06920C9B254D6B9C005D2B13 /* Screenshot2.png */; };
+		06920C9F254D6B9C005D2B13 /* Screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06920C9C254D6B9C005D2B13 /* Screenshot3.png */; };
 		06C6C4CC254C47C500BED542 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C6C4CB254C47C500BED542 /* Game.swift */; };
 		06CABA4F254C25380082F528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CABA4E254C25380082F528 /* AppDelegate.swift */; };
 		06CABA51254C25380082F528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CABA50254C25380082F528 /* SceneDelegate.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06920C9A254D6B9C005D2B13 /* Screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot1.png; sourceTree = "<group>"; };
+		06920C9B254D6B9C005D2B13 /* Screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot2.png; sourceTree = "<group>"; };
+		06920C9C254D6B9C005D2B13 /* Screenshot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot3.png; sourceTree = "<group>"; };
 		06C6C4CB254C47C500BED542 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		06CABA4B254C25380082F528 /* Apple Pie Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CABA4E254C25380082F528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06920C98254D69C3005D2B13 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				06920C9A254D6B9C005D2B13 /* Screenshot1.png */,
+				06920C9B254D6B9C005D2B13 /* Screenshot2.png */,
+				06920C9C254D6B9C005D2B13 /* Screenshot3.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		06CABA42254C25380082F528 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +74,7 @@
 		06CABA4D254C25380082F528 /* Apple Pie Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				06920C98254D69C3005D2B13 /* Screenshots */,
 				06CABA4E254C25380082F528 /* AppDelegate.swift */,
 				06CABA57254C25390082F528 /* Assets.xcassets */,
 				06C6C4CB254C47C500BED542 /* Game.swift */,
@@ -127,7 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06920C9E254D6B9C005D2B13 /* Screenshot2.png in Resources */,
 				06CABA5B254C25390082F528 /* LaunchScreen.storyboard in Resources */,
+				06920C9D254D6B9C005D2B13 /* Screenshot1.png in Resources */,
+				06920C9F254D6B9C005D2B13 /* Screenshot3.png in Resources */,
 				06CABA58254C25390082F528 /* Assets.xcassets in Resources */,
 				06CABA56254C25380082F528 /* Main.storyboard in Resources */,
 			);

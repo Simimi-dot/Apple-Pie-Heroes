@@ -15,10 +15,10 @@ struct Game {
         self.incorrectMovesRemaining = incorrectMovesRemaining
     }
     
-    var guessedWord:String{
+    var guessedWord:String{ // Угаданное слово
         var wordToShow = ""
         for letter in word{
-            if guessedLetters.contains(Character(letter.lowercased())){
+            if guessedLetters.contains(Character(letter.lowercased())) || letter == "-" || letter == " " || letter == "'"{
                 wordToShow += String(letter)
             }else{
                 wordToShow += "_"
