@@ -1,6 +1,6 @@
 # Apple-Pie-Heroes
 
-Apple Pie Game with heroes from the Dota game
+Apple Pie Game with heroes from the Dota 2 game
 
 ## Screenshots
 
